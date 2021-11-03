@@ -1,0 +1,14 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test:cypress": "cypress run",
+    "test:saucelabs": "saucectl run"
+  },
+  "devDependencies": {
+    "cypress": "^8.7.0",
+    "typescript": "^4.4.4"
+  }
+}

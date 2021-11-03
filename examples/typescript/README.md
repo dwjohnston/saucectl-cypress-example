@@ -1,5 +1,21 @@
 # saucectl cypress & typescript example
 
+In this first step, we demonstrate that we can run our cypress tests either locally on our machine directly, or via sauce ctl. 
+
+```
+yarn test:cypress
+```
+
+To run directly
+
+
+```
+yarn test:saucelabs
+```
+
+To run via sauce labs
+
+
 Example running saucectl with cypress & typescript.
 
 ## What You'll Need
