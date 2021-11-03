@@ -1,5 +1,5 @@
 {
-  "name": "typescript",
+  "name": "typescript-demo",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -8,6 +8,7 @@
     "test:saucelabs": "saucectl run"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^8.0.1",
     "cypress": "^8.7.0",
     "typescript": "^4.4.4"
   }

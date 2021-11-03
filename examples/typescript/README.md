@@ -13,7 +13,31 @@ To run directly
 yarn test:saucelabs
 ```
 
-To run via sauce labs
+To run via sauce labs. 
+
+## Part 2
+
+In this next part, I have added the [cypress testing library](https://testing-library.com/docs/cypress-testing-library/intro) extension. 
+
+(I needed the rename the package to   `typescript-demo` as you get install errors trying to install   `typescript ` into  `typescript`).
+
+You can see that the tests work fine when running directly, but when running via saucelabs it fails because it doesn't have access to the required dependencies. 
+
+```
+Error: Webpack Compilation Error
+./cypress/support/commands.js
+Module not found: Error: Can't resolve '@testing-library/cypress/add-commands' in '/home/seluser/__project__/cypress/support'
+resolve '@testing-library/cypress/add-commands' in '/home/seluser/__project__/cypress/support'
+  Parsed request is a module
+  ```
+
+
+  We can try manually remove `node_modules` from the `.sauceignore` but (works fine in this case, but in another scenario (monorepo) I have issues). 
+
+  
+
+
+
 
 
 Example running saucectl with cypress & typescript.

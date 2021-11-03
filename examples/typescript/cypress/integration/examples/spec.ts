@@ -7,6 +7,15 @@ describe('Actions', () => {
     // https://on.cypress.io/type
     const email:string = "fake@email.com";
     cy.get('.action-email')
-        .type(email).should('have.value', email)
+        .type(email).should('have.value', email); 
+
+
+
+  }); 
+
+  it("RTL test", () => {
+    cy.findByRole("textbox", {
+      name: "Email address"
+    }).should('exist'); 
   })
 })
