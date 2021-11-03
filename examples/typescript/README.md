@@ -32,9 +32,20 @@ resolve '@testing-library/cypress/add-commands' in '/home/seluser/__project__/cy
   ```
 
 
-  We can try manually remove `node_modules` from the `.sauceignore` but (works fine in this case, but in another scenario (monorepo) I have issues). 
+  We can try manually remove `node_modules` from the `.sauceignore`, and now we run into this issue: 
 
-  
+  ```
+  Installing packages: typescript@4.2.4
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm WARN typescript-demo@1.0.0 No repository field.
+
+OperationalError: Refusing to delete c:\chef\payload\__project__\node_modules\.bin\tsc: is outside c:\chef\payload\__project__\node_modules\typescript and not a link
+```
+
+(Looks like when using typescript with windows). 
+
+
 
 
 
