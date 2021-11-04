@@ -1,5 +1,20 @@
 # saucectl cypress & typescript example
 
+To reproduce the rror: 
+
+```
+#be saucectl authenticated
+
+yarn
+
+yarn test:cypress 
+# (works fine) 
+
+yarn test:saucectl
+#(errors)
+```
+
+
 In this first step, we demonstrate that we can run our cypress tests either locally on our machine directly, or via sauce ctl. 
 
 ```
